@@ -42,7 +42,8 @@ function isPointInPolygon(lat, lon, polygon) {
 ========================================= */
 async function loadAlgeriaGeo() {
   try {
-    const response = await fetch("./data/willaya.geojson");
+    const response = await fetch("./DATA/Willaya.geojson");
+    
 
     if (!response.ok) {
       throw new Error("Cannot load data/willaya.geojson");
